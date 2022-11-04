@@ -1,44 +1,46 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstadd_back.c                                   :+:      :+:    :+:   */
+/*   ft_lstclear.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kaboussi <kaboussi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/29 19:19:59 by kaboussi          #+#    #+#             */
-/*   Updated: 2022/11/04 11:01:50 by kaboussi         ###   ########.fr       */
+/*   Created: 2022/10/31 14:56:56 by kaboussi          #+#    #+#             */
+/*   Updated: 2022/11/04 12:16:16 by kaboussi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_lstadd_back(t_list **lst, t_list *new)
-{
-	t_list	*k;
-	t_list	*tmp;
+// void	del(void *content)
+// {
+// 	free(content);
+// 	content = NULL;
+// }
 
-	if (*lst)
+void	ft_lstclear(t_list **lst, void (*del)(void*lst))
+{
+	while (*lst && del)
 	{
-		tmp = *lst;
-		k = ft_lstlast(tmp);
-		k->next = new;
+		del((*lst)->content);
+		free(*lst);
+		(*lst) = (*lst)->next;
 	}
-	else
-		*lst = new;
 }
 
-// int main ()
+// int main()
 // {
 // 	t_list	*l;
 // 	t_list	*k;
-// 	t_list	*new;
+// 	t_list	*a;
 
-// 	l = ft_lstnew("kawtar");
-// 	k = ft_lstnew("kaw");
-// 	new = ft_lstnew("ayoub");
+// 	l = ft_lstnew(ft_strdup("kawtar"));
+// 	k = ft_lstnew(ft_strdup("kaw"));
+// 	a = ft_lstnew(ft_strdup("ab"));
 // 	l->next = k;
-// 	ft_lstadd_back(&l, new);
-// 	while (l != NULL)
+// 	k->next = a;
+// 	ft_lstclear(&l, del);
+// 	while (l)
 // 	{
 // 		printf("%s\n", l->content);
 // 		l = l->next;

@@ -6,7 +6,7 @@
 /*   By: kaboussi <kaboussi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/21 11:27:43 by kaboussi          #+#    #+#             */
-/*   Updated: 2022/10/21 16:01:08 by kaboussi         ###   ########.fr       */
+/*   Updated: 2022/11/04 12:23:42 by kaboussi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,14 +35,14 @@ char	*ft_strtrim(char const *s1, char const *set)
 	len = ft_strlen(s1)-1;
 	while (s1[i])
 	{
-		if (check(set,s1[i]) == 1)
+		if (check(set, s1[i]) == 1)
 			i++;
 		else
 			break ;
 	}
 	while (len >= 0)
 	{
-		if (check(set,s1[len]) == 1)
+		if (check(set, s1[len]) == 1)
 			len--;
 		else
 			break ;

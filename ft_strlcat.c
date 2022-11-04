@@ -6,7 +6,7 @@
 /*   By: kaboussi <kaboussi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/11 17:12:16 by kaboussi          #+#    #+#             */
-/*   Updated: 2022/10/20 14:59:44 by kaboussi         ###   ########.fr       */
+/*   Updated: 2022/11/04 12:22:48 by kaboussi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t n)
 	size_t	len_dst;
 	size_t	len_src;
 
-	j = 0;	
+	j = 0;
 	i = 0;
 	while (dst[i] != '\0')
 		i++;
@@ -28,9 +28,9 @@ size_t	ft_strlcat(char *dst, const char *src, size_t n)
 		j++;
 	len_src = j;
 	j = 0;
-	while (src[j] != '\0' && i < n-1)
+	while (src[j] != '\0' && i < n -1)
 	{
-		dst[i]=src[j];
+		dst[i] = src[j];
 		j++;
 		i++;
 	}

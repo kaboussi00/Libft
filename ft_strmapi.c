@@ -6,7 +6,7 @@
 /*   By: kaboussi <kaboussi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/26 12:58:10 by kaboussi          #+#    #+#             */
-/*   Updated: 2022/10/26 15:04:42 by kaboussi         ###   ########.fr       */
+/*   Updated: 2022/11/04 12:23:19 by kaboussi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int i, char c))
 	j = (char *)s;
 	while (j[i])
 	{
-		j[i] = f(i,j[i]);
+		j[i] = f(i, j[i]);
 		i++;
 	}
 	return (j);
