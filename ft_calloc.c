@@ -6,7 +6,7 @@
 /*   By: kaboussi <kaboussi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/18 12:07:10 by kaboussi          #+#    #+#             */
-/*   Updated: 2022/10/20 11:16:21 by kaboussi         ###   ########.fr       */
+/*   Updated: 2022/11/05 13:00:37 by kaboussi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,15 +17,21 @@ void	*ft_calloc(size_t n, size_t size)
 	void	*p;
 
 	p = malloc(n * size);
-	if (p == NULL)
+	if (!p)
 		return (NULL);
-	ft_bzero(p, n);
+	ft_bzero(p, n * size);
 	return (p);
 }
+
 // int main ()
 // {
 // 	int *ptr;
-// 	ptr = ft_calloc(4,sizeof(int));
-// 	ptr[2]=5;
-// 	printf("%d\n",*ptr);
+// 	ptr = ft_calloc(SIZE_MAX, SIZE_MAX);
+// 	if (!ptr)
+// 		printf("Can't allocate\n");
+// 	else
+// 	{
+// 		for (int i = 0;i < 4;i++)
+// 			printf("%c\n", ptr[i]);
+// 	}
 // }

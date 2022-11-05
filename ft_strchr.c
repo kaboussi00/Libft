@@ -6,7 +6,7 @@
 /*   By: kaboussi <kaboussi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/11 11:39:30 by kaboussi          #+#    #+#             */
-/*   Updated: 2022/10/20 14:59:31 by kaboussi         ###   ########.fr       */
+/*   Updated: 2022/11/04 16:19:51 by kaboussi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,11 @@ char	*ft_strchr(const char *str, int ch)
 
 	i = 0;
 	ptr = (char *)str;
+	if (ch == 0)
+		return (ptr + ft_strlen(ptr));
 	while (ptr[i] != '\0')
 	{
-		if (ptr[i] == ch)
+		if (ptr[i] == (unsigned char)ch)
 			return (ptr + i);
 		i++;
 	}
@@ -30,8 +32,6 @@ char	*ft_strchr(const char *str, int ch)
 
 // int main()
 // {
-// 	int ch = 'w';
-// 	char str []= "kawtbar";
-// 	printf("%s\n", ft_strchr(str, ch));
-// 	printf("%s\n", strchr(str, ch));
+// 	char	str[] = "kawtar";
+// 	printf("%s\n",ft_strchr(str,0));
 // }

@@ -6,7 +6,7 @@
 /*   By: kaboussi <kaboussi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/11 13:11:13 by kaboussi          #+#    #+#             */
-/*   Updated: 2022/10/20 15:00:02 by kaboussi         ###   ########.fr       */
+/*   Updated: 2022/11/04 16:21:27 by kaboussi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ char	*ft_strrchr(const char *str, int ch)
 		i++;
 	while (i >= 0)
 	{
-		if (ptr[i] == ch)
+		if (ptr[i] == (unsigned char)ch)
 			return (ptr + i);
 		i--;
 	}

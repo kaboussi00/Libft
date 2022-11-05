@@ -6,7 +6,7 @@
 /*   By: kaboussi <kaboussi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/13 12:13:23 by kaboussi          #+#    #+#             */
-/*   Updated: 2022/10/20 14:59:59 by kaboussi         ###   ########.fr       */
+/*   Updated: 2022/11/05 12:39:49 by kaboussi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,27 +14,25 @@
 
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
+	size_t	k;
 	size_t	i;
 	size_t	j;
-	size_t	k;
-	char	*b;
 
+	if (little[0] == '\0')
+		return ((char *)big);
 	i = 0;
-	j = 0;
-	b = (char *)big;
-	while (b[i] != '\0')
+	k = ft_strlen(little);
+	while ((big[i] != '\0') && (i < len - k + 1))
 	{
-		k = i;
-		while (b[k] == little[j] && j < len - 1)
+		if (len == 0)
+			return (NULL);
+		j = 0;
+		while (little[j] == big[i + j])
 		{
-			if (little [j +1] == '\0')
-			{
-				return (b + i);
-			}
-			k++;
+			if (little[j + 1] == '\0')
+				return ((char *)(big + i));
 			j++;
 		}
-		j = 0;
 		i++;
 	}
 	return (0);
@@ -42,9 +40,9 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 
 // int main ()
 // {
-// 	char big[]="kawtarab";
-// 	char little[]="ara";
+// 	char big[] = "aaabcabcd";
+// 	char little[] = "cd";
 
-// 	printf("%s\n", ft_strnstr(big, little, 4));
-// 	printf("%s", strnstr(big, little, 4));
+// 	printf("%s\n", ft_strnstr(big, little, 8));
+// 	printf("%s", strnstr(big, little, 8));
 // }

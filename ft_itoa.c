@@ -6,37 +6,55 @@
 /*   By: kaboussi <kaboussi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/23 12:13:21 by kaboussi          #+#    #+#             */
-/*   Updated: 2022/10/23 14:16:02 by kaboussi         ###   ########.fr       */
+/*   Updated: 2022/11/05 15:39:27 by kaboussi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+static	int	ft_count(int n)
+{
+	int	i;
+
+	i = 0;
+	if (n == 0)
+		return (1);
+	if (n < 0)
+	{
+		i++;
+		n *= -1;
+	}
+	while (n)
+	{
+		n = n / 10;
+		i++;
+	}
+	return (i);
+}
+
 char	*ft_itoa(int n)
 {
 	char	*p;
-	int		nb;
 	int		i;
 
-	i = 0;
-	nb = n;
-	while (n && ++i)
-		n = n / 10;
-	if (nb < 0)
-		i++;
+	if (n == -2147483648)
+		return (ft_strdup("-2147483648"));
+	if (n == 0)
+		return (ft_strdup("0"));
+	i = ft_count(n);
 	p = ft_calloc(i + 1, sizeof(char));
 	if (!p)
 		return (NULL);
 	--i;
-	if (nb < 0)
+	if (n < 0)
 	{
 		p[0] = '-';
-		nb *= -1;
+		n *= -1;
 	}
-	while (nb)
+	while (n)
 	{
-		p[i--] = (nb % 10) + 48;
-		nb = nb / 10;
+		p[i--] = (n % 10) + 48;
+		n = n / 10;
 	}
 	return (p);
 }

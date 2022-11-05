@@ -6,7 +6,7 @@
 /*   By: kaboussi <kaboussi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/10 14:02:44 by kaboussi          #+#    #+#             */
-/*   Updated: 2022/10/20 14:59:10 by kaboussi         ###   ########.fr       */
+/*   Updated: 2022/11/04 15:39:56 by kaboussi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,7 @@
 
 int	ft_isprint(int c)
 {
-	if (c >= 31 && c <= 126)
+	if (c >= 32 && c <= 126)
 		return (1);
 	return (0);
 }
-// #include<stdio.h>
-// int main ()
-// {
-// 	printf("%d",ft_isprint(126));
-// }
