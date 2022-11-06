@@ -6,7 +6,7 @@
 /*   By: kaboussi <kaboussi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/19 11:47:36 by kaboussi          #+#    #+#             */
-/*   Updated: 2022/11/04 12:20:41 by kaboussi         ###   ########.fr       */
+/*   Updated: 2022/11/05 19:06:03 by kaboussi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,11 +30,3 @@ char	*ft_strdup(const char *str)
 	}
 	return (p);
 }
-// int main ()
-// {
-// 	// const char str:
-// 	 char str[] = "kawtar";
-// 	// str2[] = "kawtar";
-// 	printf("%s\n",ft_strdup(str));
-// 	// printf("%s\n",strdup(str2));
-// }

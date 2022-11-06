@@ -6,7 +6,7 @@
 /*   By: kaboussi <kaboussi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/26 12:58:10 by kaboussi          #+#    #+#             */
-/*   Updated: 2022/11/04 12:23:19 by kaboussi         ###   ########.fr       */
+/*   Updated: 2022/11/05 19:17:54 by kaboussi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,12 +20,19 @@
 // 	return (c);
 // }
 
-char	*ft_strmapi(char const *s, char (*f)(unsigned int i, char c))
+// char	f(unsigned int i, char c)
+// {
+// 	return (i + c);
+// }
+
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	int		i;
 	char	*j;
 
 	i = 0;
+	if (!s || !f)
+		return (NULL);
 	j = (char *)s;
 	while (j[i])
 	{
@@ -34,9 +41,3 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int i, char c))
 	}
 	return (j);
 }
-// int main()
-// {
-// 	char s[] = "njd523d5d";
-// 	printf("%s\n",ft_strmapi(s,f));
-
-// }

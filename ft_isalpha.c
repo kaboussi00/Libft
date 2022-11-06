@@ -6,7 +6,7 @@
 /*   By: kaboussi <kaboussi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/10 13:59:41 by kaboussi          #+#    #+#             */
-/*   Updated: 2022/10/20 14:58:51 by kaboussi         ###   ########.fr       */
+/*   Updated: 2022/11/05 19:07:21 by kaboussi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,3 @@ int	ft_isalpha(int c)
 		return (1);
 	return (0);
 }
-// #include<stdio.h>
-// int main ()
-// {
-// 	printf("%d",ft_isalpha('0'));
-// }

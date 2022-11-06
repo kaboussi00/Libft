@@ -6,7 +6,7 @@
 /*   By: kaboussi <kaboussi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/10 14:01:40 by kaboussi          #+#    #+#             */
-/*   Updated: 2022/10/20 14:58:59 by kaboussi         ###   ########.fr       */
+/*   Updated: 2022/11/05 19:03:52 by kaboussi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,3 @@ int	ft_isdigit(int c)
 		return (1);
 	return (0);
 }
-// #include <stdio.h>
-// int main ()
-// {
-// 	printf("%d",ft_isdigit('l'));
-// }

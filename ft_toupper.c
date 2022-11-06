@@ -6,7 +6,7 @@
 /*   By: kaboussi <kaboussi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/10 20:35:30 by kaboussi          #+#    #+#             */
-/*   Updated: 2022/10/20 15:00:14 by kaboussi         ###   ########.fr       */
+/*   Updated: 2022/11/05 19:06:55 by kaboussi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,3 @@ int	ft_toupper(int ch)
 		ch -= 32;
 	return (ch);
 }
-
-// int main()
-// {
-// 	int ch = '8';
-// 	printf("%c",ft_toupper(ch));
-// 	return (0);
-// }

@@ -6,7 +6,7 @@
 /*   By: kaboussi <kaboussi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/21 11:27:43 by kaboussi          #+#    #+#             */
-/*   Updated: 2022/11/04 12:23:42 by kaboussi         ###   ########.fr       */
+/*   Updated: 2022/11/05 19:06:43 by kaboussi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,9 +49,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 	}
 	return (ft_substr(s1, i, len - i +1));
 }
-// int main  ()
-// {
-// 	char s1[] = "abdeagbzcd";
-// 	char set[] = "abcd";
-// 	printf("%s\n",ft_strtrim(s1,set));
-// }

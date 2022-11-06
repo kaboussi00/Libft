@@ -6,7 +6,7 @@
 /*   By: kaboussi <kaboussi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/13 15:00:52 by kaboussi          #+#    #+#             */
-/*   Updated: 2022/10/20 14:58:41 by kaboussi         ###   ########.fr       */
+/*   Updated: 2022/11/05 19:03:24 by kaboussi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,11 +38,3 @@ int	ft_atoi(const char *str)
 	}
 	return (n * s);
 }
-
-// int main()
-// {
-// 	char str[]= "	    -36598";
-// 	printf("%d\n",ft_atoi(str));
-// 	printf("%d",atoi(str));
-// 	return 0;
-// }

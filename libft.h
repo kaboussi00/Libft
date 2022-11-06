@@ -6,7 +6,7 @@
 /*   By: kaboussi <kaboussi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/10 13:52:38 by kaboussi          #+#    #+#             */
-/*   Updated: 2022/11/05 15:28:33 by kaboussi         ###   ########.fr       */
+/*   Updated: 2022/11/06 13:17:48 by kaboussi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,6 +40,7 @@ int		ft_toupper(int ch);
 int		ft_tolower(int ch);
 char	*ft_itoa(int n);
 int		ft_memcmp(const void *str1, const void *str2, size_t n);
+void	ft_striteri(char *s, void (*f)(unsigned int i, char *c));
 void	*ft_memcpy(void *dest, const void *src, size_t n);
 void	*ft_calloc(size_t n, size_t size);
 char	*ft_strdup(const char *str);
@@ -47,7 +48,7 @@ char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_strtrim(char const *s1, char const *set);
 char	**ft_split(char const *s, char c);
-char	*ft_strmapi(char const *s, char (*f)(unsigned int i, char c));
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char *s, int fd);
 void	ft_putendl_fd(char *s, int fd);

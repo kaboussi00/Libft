@@ -62,7 +62,7 @@ $(NAME):$(OBJS)
 bonus:$(OBJS_B)
 	$(AR) $(NAME) $(OBJS_B)
 
-.o:.c $(INC)
+%.o:%.c $(INC)
 	$(CC) $(CFLAGS) -o $@ -c $< 
 
 clean:

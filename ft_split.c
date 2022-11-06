@@ -6,7 +6,7 @@
 /*   By: kaboussi <kaboussi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/23 10:22:20 by kaboussi          #+#    #+#             */
-/*   Updated: 2022/10/26 12:25:33 by kaboussi         ###   ########.fr       */
+/*   Updated: 2022/11/05 16:18:01 by kaboussi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,22 +15,22 @@
 static int	calcule_mot(char const *str, char c)
 {
 	int	i;
-	int	j;
+	int	calcul;
 
 	i = 0;
-	j = 0;
+	calcul = 0;
 	while (str[i])
 	{
 		while (str[i] == c)
 			i++;
 		if (str[i] != c && str[i])
 		{
-			j++;
+			calcul++;
 			while (str[i] != c && str[i])
 				i++;
 		}
 	}
-	return (j);
+	return (calcul);
 }
 
 static int	calcule_lettre(char const *str, char c)
@@ -50,15 +50,15 @@ static int	calcule_lettre(char const *str, char c)
 	return (j);
 }
 
-static char	*ft_charge(char const *str, char c, int j)
+static char	*ft_charge(char const *str, char c, int len)
 {
 	int		i;
 	int		k;
 	char	*p;
 
 	i = 0;
-	p = ft_calloc((j + 1), sizeof(char));
-	if (!p || j == 0)
+	p = ft_calloc((len + 1), sizeof(char));
+	if (!p || len == 0)
 		return (NULL);
 	k = 0;
 	while (str[i] == c && str[i])

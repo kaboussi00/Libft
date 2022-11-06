@@ -6,7 +6,7 @@
 /*   By: kaboussi <kaboussi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/04 11:21:38 by kaboussi          #+#    #+#             */
-/*   Updated: 2022/11/04 12:14:40 by kaboussi         ###   ########.fr       */
+/*   Updated: 2022/11/06 11:16:56 by kaboussi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,35 +27,26 @@
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
 	t_list	*ret;
-	t_list	*tmp;
+	t_list	*tmp2;
 
+	if (!lst || !f || !del)
+		return (NULL);
 	ret = NULL;
-	tmp = lst;
-	while (tmp)
+	tmp2 = lst;
+	while (tmp2 && f)
 	{
-		ft_lstadd_back(&ret, ft_lstnew(f(tmp->content)));
-		tmp = tmp->next;
+		ft_lstadd_back(&ret, ft_lstnew(f(tmp2->content)));
+		tmp2 = tmp2->next;
 	}
-	ft_lstiter(lst, del);
 	return (ret);
 }
+int main ()
+{
+	t_list	*a;
+	t_list	*b;
+	t_list	*c;
 
-// int main()
-// {	t_list	*ret;
-// 	t_list	*t = NULL;
-
-// 	ft_lstadd_back(&t, ft_lstnew(ft_strdup("kawtar")));
-// 	ft_lstadd_back(&t, ft_lstnew(ft_strdup("is")));
-// 	ft_lstadd_back(&t, ft_lstnew(ft_strdup("awesome")));
-// 	ret = ft_lstmap(t, f, del);
-// 	while (ret)
-// 	{
-// 		printf("%s\n", ret->content);
-// 		ret = ret->next;
-// 	}
-// 	while (t)
-// 	{
-// 		printf("%s\n", t->content);
-// 		t = t->next;
-// 	}
-// }
+	ft_lstadd_back(&a ,(ft_lstnew(ft_strdup("kawtar"))));
+	ft_lstadd_back(&a ,(ft_lstnew(ft_strdup("aboussi"))));
+	ft_lstadd_back(&a ,(ft_lstnew(ft_strdup("aanjaimi"))));
+}

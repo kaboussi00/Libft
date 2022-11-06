@@ -6,7 +6,7 @@
 /*   By: kaboussi <kaboussi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/10 14:06:36 by kaboussi          #+#    #+#             */
-/*   Updated: 2022/10/12 14:19:56 by kaboussi         ###   ########.fr       */
+/*   Updated: 2022/11/05 19:06:23 by kaboussi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,3 @@ size_t	ft_strlen(const char *str)
 		i++;
 	return (i);
 }
-// #include<stdio.h>
-// int main ()
-// {
-// 	printf("%d",ft_strlen(""));
-// }

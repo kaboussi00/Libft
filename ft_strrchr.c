@@ -6,7 +6,7 @@
 /*   By: kaboussi <kaboussi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/11 13:11:13 by kaboussi          #+#    #+#             */
-/*   Updated: 2022/11/04 16:21:27 by kaboussi         ###   ########.fr       */
+/*   Updated: 2022/11/05 19:06:39 by kaboussi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,10 +29,3 @@ char	*ft_strrchr(const char *str, int ch)
 	}
 	return (0);
 }
-// int main ()
-// {
-// 	int ch = 'r';
-// 	char str []= "kawtbar";
-// 	printf("%s\n", ft_strrchr(str, ch));
-// 	printf("%s\n", strrchr(str, ch));
-// }

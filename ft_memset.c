@@ -6,7 +6,7 @@
 /*   By: kaboussi <kaboussi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/10 13:51:45 by kaboussi          #+#    #+#             */
-/*   Updated: 2022/11/04 12:19:20 by kaboussi         ###   ########.fr       */
+/*   Updated: 2022/11/05 19:05:41 by kaboussi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,10 +27,3 @@ void	*ft_memset(void *s, int c, size_t n)
 	}
 	return (s);
 }
-// #include <stdio.h>
-// int main ()
-// {
-// 	char s[] = "kawtar";
-// 	ft_memset(s, 'o', 7);
-//  	printf("%s",s);
-// }

@@ -6,7 +6,7 @@
 /*   By: kaboussi <kaboussi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/11 11:39:30 by kaboussi          #+#    #+#             */
-/*   Updated: 2022/11/04 16:19:51 by kaboussi         ###   ########.fr       */
+/*   Updated: 2022/11/05 19:06:00 by kaboussi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,9 +29,3 @@ char	*ft_strchr(const char *str, int ch)
 	}
 	return (0);
 }
-
-// int main()
-// {
-// 	char	str[] = "kawtar";
-// 	printf("%s\n",ft_strchr(str,0));
-// }

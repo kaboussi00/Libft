@@ -6,7 +6,7 @@
 /*   By: kaboussi <kaboussi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/11 17:12:16 by kaboussi          #+#    #+#             */
-/*   Updated: 2022/11/05 12:17:05 by kaboussi         ###   ########.fr       */
+/*   Updated: 2022/11/05 19:06:13 by kaboussi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,15 +39,3 @@ size_t	ft_strlcat(char *dst, const char *src, size_t n)
 	else
 		return (len_dst + len_src);
 }
-// int main ()
-// {
-// 	char dst1[] = "kawtar";
-// 	char src1[] = "aboussi";
-// 	char dst2[] = "kawtar";
-// 	char src2[] = "aboussi";
-// 	printf("%zu\n",ft_strlcat(dst1,src1,9));
-// 	printf("%s\n", dst1);
-// 	printf("%zu\n",strlcat(dst2,src2,9));
-// 	printf("%s\n", dst2);
-// 	return 0;
-// }

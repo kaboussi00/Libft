@@ -6,7 +6,7 @@
 /*   By: kaboussi <kaboussi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/13 12:13:23 by kaboussi          #+#    #+#             */
-/*   Updated: 2022/11/05 12:39:49 by kaboussi         ###   ########.fr       */
+/*   Updated: 2022/11/05 19:06:35 by kaboussi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,12 +37,3 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	}
 	return (0);
 }
-
-// int main ()
-// {
-// 	char big[] = "aaabcabcd";
-// 	char little[] = "cd";
-
-// 	printf("%s\n", ft_strnstr(big, little, 8));
-// 	printf("%s", strnstr(big, little, 8));
-// }

@@ -6,7 +6,7 @@
 /*   By: kaboussi <kaboussi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/10 13:58:14 by kaboussi          #+#    #+#             */
-/*   Updated: 2022/10/20 14:58:47 by kaboussi         ###   ########.fr       */
+/*   Updated: 2022/11/05 19:03:39 by kaboussi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,3 @@ int	ft_isalnum(int c)
 		return (1);
 	return (0);
 }
-// int main ()
-// {
-// 	printf("%d",ft_isalnum('A'));
-// }

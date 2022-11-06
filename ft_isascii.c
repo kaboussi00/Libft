@@ -6,7 +6,7 @@
 /*   By: kaboussi <kaboussi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/10 14:00:27 by kaboussi          #+#    #+#             */
-/*   Updated: 2022/10/20 14:58:55 by kaboussi         ###   ########.fr       */
+/*   Updated: 2022/11/05 19:03:48 by kaboussi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,3 @@ int	ft_isascii(int c)
 		return (1);
 	return (0);
 }
-// #include<stdio.h>
-// int main ()
-// {
-// 	printf("%d",ft_isascii(128));
-// }

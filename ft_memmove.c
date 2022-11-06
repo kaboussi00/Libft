@@ -6,7 +6,7 @@
 /*   By: kaboussi <kaboussi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/16 12:44:39 by kaboussi          #+#    #+#             */
-/*   Updated: 2022/10/20 14:58:34 by kaboussi         ###   ########.fr       */
+/*   Updated: 2022/11/06 13:03:27 by kaboussi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,11 +30,3 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	else
 		return (ft_memcpy(dest, src, n));
 }
-
-// int main()
-// {
-// 	char src[]= "aboussikawtar";
-// 	size_t n = 6;
-// 	printf("%s\n", memmove(src + 3, src, n));
-// 	printf("%s\n", ft_memmove(src + 3, src, n));
-// }

@@ -6,7 +6,7 @@
 /*   By: kaboussi <kaboussi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/28 12:45:25 by kaboussi          #+#    #+#             */
-/*   Updated: 2022/11/03 10:13:21 by kaboussi         ###   ########.fr       */
+/*   Updated: 2022/11/05 19:04:31 by kaboussi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,22 +20,3 @@ void	ft_lstadd_front(t_list **lst, t_list *new)
 		*lst = new;
 	}
 }
-
-// int main ()
-// {
-// 	t_list	*l;
-// 	t_list	*k;
-// 	t_list	*new;
-
-// 	l = ft_lstnew("kawtar");
-// 	k = ft_lstnew("kaw");
-// 	new = ft_lstnew("ayoub");
-// 	l->next = k;
-// 	ft_lstadd_front(&l, new);
-// 	while (l != NULL)
-// 	{
-// 		printf("%s\n", l->content);
-// 		l = l->next;
-// 	}
-
-// }

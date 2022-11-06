@@ -6,7 +6,7 @@
 /*   By: kaboussi <kaboussi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 20:23:13 by kaboussi          #+#    #+#             */
-/*   Updated: 2022/11/04 12:20:13 by kaboussi         ###   ########.fr       */
+/*   Updated: 2022/11/05 19:05:51 by kaboussi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,10 +33,3 @@ void	ft_putnbr_fd(int n, int fd)
 		ft_putnbr_fd(nb / 10, fd);
 	ft_putchar_fd(nb % 10 + 48, fd);
 }
-// int main()
-// {
-// 	int fd1 = open("test.fd", O_RDWR);
-// 	printf("%d\n",fd1);
-// 	int	n = -60*2;
-// 	ft_putnbr_fd(n,fd1);
-// }
