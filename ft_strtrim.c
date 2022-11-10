@@ -6,7 +6,7 @@
 /*   By: kaboussi <kaboussi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/21 11:27:43 by kaboussi          #+#    #+#             */
-/*   Updated: 2022/11/05 19:06:43 by kaboussi         ###   ########.fr       */
+/*   Updated: 2022/11/09 16:30:01 by kaboussi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 	unsigned int	i;
 	size_t			len;
 
+	if (!s1 || !set)
+		return (NULL);
 	i = 0;
 	len = ft_strlen(s1)-1;
 	while (s1[i])

@@ -6,38 +6,39 @@
 /*   By: kaboussi <kaboussi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/26 12:58:10 by kaboussi          #+#    #+#             */
-/*   Updated: 2022/11/05 19:17:54 by kaboussi         ###   ########.fr       */
+/*   Updated: 2022/11/10 13:33:04 by kaboussi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-// char	f(unsigned int i, char c)
-// {
-// 	if (i >= 3)
-// 		if (c >= '0' && c <= '9')
-// 			c = '0';
-// 	return (c);
-// }
+char	f(unsigned int i, char c)
+{
+	if (i >= 3)
+		if (c >= '0' && c <= '9')
+			c = '0';
+	return (c);
+}
 
 // char	f(unsigned int i, char c)
 // {
 // 	return (i + c);
 // }
-
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	int		i;
-	char	*j;
+	char	*p;
 
 	i = 0;
 	if (!s || !f)
 		return (NULL);
-	j = (char *)s;
-	while (j[i])
+	p = ft_calloc(ft_strlen(s) + 1, sizeof(char));
+	if (!p)
+		return (NULL);
+	while (s[i])
 	{
-		j[i] = f(i, j[i]);
+		p[i] = f(i, s[i]);
 		i++;
 	}
-	return (j);
+	return (p);
 }

@@ -6,7 +6,7 @@
 /*   By: kaboussi <kaboussi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 19:45:51 by kaboussi          #+#    #+#             */
-/*   Updated: 2022/11/05 19:05:54 by kaboussi         ###   ########.fr       */
+/*   Updated: 2022/11/10 13:19:23 by kaboussi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ void	ft_putstr_fd(char *s, int fd)
 {
 	int		i;
 
+	if (!s)
+		return ;
 	i = 0;
 	while (s[i])
 	{

@@ -6,7 +6,7 @@
 /*   By: kaboussi <kaboussi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/23 10:22:20 by kaboussi          #+#    #+#             */
-/*   Updated: 2022/11/05 16:18:01 by kaboussi         ###   ########.fr       */
+/*   Updated: 2022/11/10 13:32:34 by kaboussi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,6 +69,20 @@ static char	*ft_charge(char const *str, char c, int len)
 	return (p);
 }
 
+static char	**ft_free(char **p, int j)
+{
+	int	i;
+
+	i = 0;
+	while (i < j)
+	{
+		free(p[i]);
+		i++;
+	}
+	free(p);
+	return (NULL);
+}
+
 char	**ft_split(char const *s, char c)
 {
 	int		i;
@@ -77,6 +91,8 @@ char	**ft_split(char const *s, char c)
 	char	*ptr;
 	int		len;
 
+	if (!s)
+		return (NULL);
 	i = 0;
 	p = ft_calloc((calcule_mot(s, c) + 1), sizeof(char *));
 	if (!p)
@@ -88,6 +104,8 @@ char	**ft_split(char const *s, char c)
 			i++;
 		len = calcule_lettre(s + i, c);
 		ptr = ft_charge(s + i, c, len);
+		if (!ptr)
+			return (ft_free(p, j));
 		if (ptr)
 			p[j++] = ptr;
 		i += len;
@@ -95,17 +113,3 @@ char	**ft_split(char const *s, char c)
 	p[j] = NULL;
 	return (p);
 }
-
-// int main()
-// {  
-// 	char str[]="iiiiiayoubiiiiiiikawtariiiiiiinoureiiiifatihaiiii";
-// 	char c = 'i';
-// 	char	**s = ft_split(str, c);
-// 	int i = 0;
-
-// 	while (s[i])
-// 	{
-// 		printf("<%s>\n", s[i]);
-// 		i++;
-// 	}
-// }

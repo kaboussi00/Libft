@@ -6,7 +6,7 @@
 /*   By: kaboussi <kaboussi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/04 11:21:38 by kaboussi          #+#    #+#             */
-/*   Updated: 2022/11/06 11:16:56 by kaboussi         ###   ########.fr       */
+/*   Updated: 2022/11/10 13:31:51 by kaboussi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,14 +39,4 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 		tmp2 = tmp2->next;
 	}
 	return (ret);
-}
-int main ()
-{
-	t_list	*a;
-	t_list	*b;
-	t_list	*c;
-
-	ft_lstadd_back(&a ,(ft_lstnew(ft_strdup("kawtar"))));
-	ft_lstadd_back(&a ,(ft_lstnew(ft_strdup("aboussi"))));
-	ft_lstadd_back(&a ,(ft_lstnew(ft_strdup("aanjaimi"))));
 }

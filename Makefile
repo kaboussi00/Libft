@@ -55,6 +55,8 @@ CFLAGS = -Wall -Wextra -Werror
 
 AR = ar -r
 
+CC = cc
+
 all:$(NAME)
 $(NAME):$(OBJS)
 	$(AR) $(NAME) $(OBJS)
@@ -63,7 +65,7 @@ bonus:$(OBJS_B)
 	$(AR) $(NAME) $(OBJS_B)
 
 %.o:%.c $(INC)
-	$(CC) $(CFLAGS) -o $@ -c $< 
+	$(CC) $(CFLAGS) -o $@ -c $<
 
 clean:
 	$(RM) $(OBJS) $(OBJS_B)
