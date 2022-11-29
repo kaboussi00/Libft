@@ -12,14 +12,6 @@
 
 #include "libft.h"
 
-// void	f(unsigned int i, char *c)
-// {
-// 	if (i >= 3)
-// 		if (*c >= '0' && *c <= '9')
-// 			*c = '0';
-// 	return ;
-// }
-
 void	ft_striteri(char *s, void (*f)(unsigned int i, char *c))
 {
 	int		i;
