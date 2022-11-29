@@ -12,12 +12,6 @@
 
 #include "libft.h"
 
-// void	f(void *content)
-// {
-// 	free(content);
-// 	content = "2022";
-// }
-
 void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
 	t_list	*tmp;
