@@ -12,18 +12,6 @@
 
 #include "libft.h"
 
-char	f(unsigned int i, char c)
-{
-	if (i >= 3)
-		if (c >= '0' && c <= '9')
-			c = '0';
-	return (c);
-}
-
-// char	f(unsigned int i, char c)
-// {
-// 	return (i + c);
-// }
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	int		i;
