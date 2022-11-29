@@ -12,18 +12,6 @@
 
 #include "libft.h"
 
-// void	*f(void *content)
-// {
-// 	content = "2022";
-// 	return (content);
-// }
-
-// void	del(void *content)
-// {
-// 	free(content);
-// 	content = NULL;
-// }
-
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
 	t_list	*ret;
